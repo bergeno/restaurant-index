@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Boka's",
+    "address": "Lagoa",
+    "cuisine": "Brasileira",
+    "website": "https://bokas.com.br",
+    "description": "Restaurante com preço acessível e comida muito saborosa"
+  },
+  {
+    "name": "Camarão Dourado",
+    "address": "Ingleses",
+    "cuisine": "Brasileira",
+    "website": "https://bokas.com.br",
+    "description": "Comida muito saborosa e localização privilegiada"
+  },
+  {
+    "name": "Burger King",
+    "address": "Diamon Mall",
+    "cuisine": "American",
+    "website": "https://bk.com.br",
+    "description": "I don't"
+  },
+  {
+    "name": "Comida Mineira",
+    "address": "Maceió",
+    "cuisine": "Baiana",
+    "website": "https://comidamineira.com.br",
+    "description": "Mineira e está em Maceió, Bahia."
+  }
+]
