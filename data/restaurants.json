@@ -1,1 +1,42 @@
-[{"id":"r1","name":"Boka's","address":"Lagoa","cuisine":"Brasileira","website":"https://bokas.com.br","description":"Restaurante com preço acessível e comida muito saborosa"},{"id":"r2","name":"Camarão Dourado","address":"Ingleses","cuisine":"Brasileira","website":"https://bokas.com.br","description":"Comida muito saborosa e localização privilegiada"},{"id":"r3","name":"Burger King","address":"Diamon Mall","cuisine":"American","website":"https://bk.com.br","description":"I don't"},{"id":"r4","name":"Comida Mineira","address":"Maceió","cuisine":"Baiana","website":"https://comidamineira.com.br","description":"Mineira e está em Maceió, Bahia."},{"id":"r5","name":"Gauchão","address":"Milionários - bairro de rico","cuisine":"Podrão","website":"https://gauchao.com.br","description":"Daniel come"},{"name":"Podrão do Otávio","address":"Pampulha","cuisine":"Otávio","website":"https://bokas.com.br","description":"Otávio","id":"7fa59968-9f3a-4996-9079-7ad41a3218e0"}]
+[
+  {
+    "id": "r1",
+    "name": "Boka's",
+    "address": "Lagoa",
+    "cuisine": "Brasileira",
+    "website": "https://instabio.cc/20727IDtwwe",
+    "description": "Servings and prices are great. The restaurant specializes in sea food. The parking is awesome. The service is really good. The view at this restaurant is amazing. There is always a table available, as the place is gigantic, like the servings. It is pretty quiet, all year round. The a-la-carte servings also come with an all you can eat salad buffet. Did I mention the servings sizes?"
+  },
+  {
+    "id": "r2",
+    "name": "Camarão Dourado",
+    "address": "Ingleses",
+    "cuisine": "Brasileira",
+    "website": "https://www.tripadvisor.com/Restaurant_Review-g3395893-d15137671-Reviews-Camarao_Dourado-Ingleses_Florianopolis_State_of_Santa_Catarina.html",
+    "description": "For those who are in the Ingleses beach region and want to try the shrimp sequence, here is a great option! It includes a lot of food and the value is very good. It’s all very tasty. The service is above average comparing to other location in the same area. The food can take a while to reach your table."
+  },
+  {
+    "id": "r3",
+    "name": "Burger King",
+    "address": "Diamon Mall",
+    "cuisine": "American",
+    "website": "https://bk.com.br",
+    "description": "I don't"
+  },
+  {
+    "id": "r4",
+    "name": "Comida Mineira",
+    "address": "Maceió",
+    "cuisine": "Baiana",
+    "website": "https://comidamineira.com.br",
+    "description": "Mineira e está em Maceió, Bahia."
+  },
+  {
+    "id": "r5",
+    "name": "Gauchão",
+    "address": "Milionários - bairro de rico",
+    "cuisine": "Podrão",
+    "website": "https://gauchao.com.br",
+    "description": "Daniel come"
+  }
+]
