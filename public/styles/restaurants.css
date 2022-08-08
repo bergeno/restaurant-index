@@ -1,7 +1,3 @@
-main {
-  max-width: 40rem;
-}
-
 #restaurants-list {
   list-style: none;
   margin: 2rem 0;
@@ -53,4 +49,14 @@ main {
 .restaurant-actions a:hover,
 .restaurant-actions a:active {
   background-color: rgb(202, 141, 62);
+}
+
+p {
+  text-align: justify;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }

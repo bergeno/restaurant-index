@@ -1,3 +1,4 @@
+//Importação de módulos externos
 const path = require('path');
 const fs = require('fs');
 
@@ -6,13 +7,17 @@ const express = require('express');
 const app = express();
 const uuid = require('uuid');
 
+//Importação Funções de fileRead e writeFile
+const resData = require('./util/restaurantData');
+
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use(express.static('public'));
 app.use(express.urlencoded({extended: false}));
 
-app.listen(3030);
+app.listen(3000);
 
 // Museu
 // function getHtmlFilePath(name){
@@ -20,15 +25,16 @@ app.listen(3030);
 // }
 
 
+
 app.get('/', function(req, res){
     res.render('index');
 });
 
-app.get('/restaurants', function(req, res){
-    const filePath = path.join(__dirname, 'data', 'restaurants.json');
 
-    const fileData = fs.readFileSync(filePath);
-    const storedRestaurants = JSON.parse(fileData);
+//Lista de Restaurantes
+app.get('/restaurants', function(req, res){
+    
+    const storedRestaurants = resData.getStoredRestaurants();
 
     res.render('restaurants', {
          numberOfRestaurants: storedRestaurants.length,
@@ -36,13 +42,12 @@ app.get('/restaurants', function(req, res){
         });
 });
 
+//Filtrar restaurante por id
 app.get('/restaurant/:id', function(req, res){
     const restaurantId = req.params.id;
     // res.render('restaurant-detail', {rid: restaurantId});
 
-    const filePath = path.join(__dirname, 'data', 'restaurants.json');
-    const fileData = fs.readFileSync(filePath);
-    const restaurants = JSON.parse(fileData);
+    const restaurants = resData.getStoredRestaurants();
 
     for ( const restaurant of restaurants){
         if (restaurant.id === restaurantId){
@@ -50,7 +55,7 @@ app.get('/restaurant/:id', function(req, res){
         }
     }
 
-    res.render('404');
+    res.status(404).render('404');
 });
 
 app.get('/about', function(req, res){
@@ -61,24 +66,31 @@ app.get('/confirm', function(req, res){
     res.render('confirm');
 });
 
+//Endpoints de recomendação do restaurante
 app.get('/recommend', function(req, res){
     res.render('recommend');
 });
 
 app.post('/recommend', function(req,res){
-    const filePath = path.join(__dirname, 'data', 'restaurants.json');
     const restaurant = req.body;
     restaurant.id = uuid.v4();
 
-    const fileData = fs.readFileSync(filePath);
-    const storedRestaurants = JSON.parse(fileData);
+    const storedRestaurants = resData.getStoredRestaurants();
 
     storedRestaurants.push(restaurant);
 
-    fs.writeFileSync(filePath, JSON.stringify(storedRestaurants));
+    resData.storeRestaurant(storedRestaurants);
 
     res.redirect('/confirm')
 });
 
+
+app.use(function(req, res){
+    res.status(404).render('404');
+});
+
+app.use(function(error, req, res, next){
+    res.status(500).render('500');
+});
 
 
