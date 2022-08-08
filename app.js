@@ -10,6 +10,7 @@ const uuid = require('uuid');
 //Importação Funções de fileRead e writeFile
 const resData = require('./util/restaurantData');
 
+let port = 3000;
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -17,7 +18,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(express.urlencoded({extended: false}));
 
-app.listen(3000);
+app.listen(port);
 
 // Museu
 // function getHtmlFilePath(name){
