@@ -6,7 +6,11 @@
         "cuisine": "Brasileira",
         "website": "https://instabio.cc/20727IDtwwe",
         "image": "http://www.receitasparatodososgostos.net/wp-content/uploads/2020/11/camaroes.jpg",
-        "description": "Servings and prices are great. The restaurant specializes in sea food. The parking is awesome. The service is really good. The view at this restaurant is amazing. There is always a table available, as the place is gigantic, like the servings. It is pretty quiet, all year round. The a-la-carte servings also come with an all you can eat salad buffet. Did I mention the servings sizes?"
+        "description": "Servings and prices are great. The restaurant specializes in sea food. The parking is awesome. The service is really good. The view at this restaurant is amazing. There is always a table available, as the place is gigantic, like the servings. It is pretty quiet, all year round. The a-la-carte servings also come with an all you can eat salad buffet. Did I mention the servings sizes?",
+        "comments": [
+            "Very polite waitress",
+            "Food wasn't very good"
+        ]
     },
     {
         "id": "r2",
@@ -24,6 +28,10 @@
         "website": "https://www.glouton.com.br/",
         "image": "https://media-cdn.tripadvisor.com/media/photo-s/04/63/ae/10/glouton.jpg",
         "description": "Do not miss this restaurant. One of the best dining experiences ever, definitely top in Brazil.\r\nUnpretentious, delicious food with beautiful presentation in a beautiful setting, friendly staff. Way beyond my expectations based on prior reviews. This should be at least a 2 star Michelin restaurant. Must dine here if in Belo Horizonte.",
-        "id": "80537e13-61a7-4b30-8545-28aa33bf4940"
+        "id": "80537e13-61a7-4b30-8545-28aa33bf4940",
+        "comments": [
+            "Very polite waitress",
+            "Food wasn't very good"
+        ]
     }
 ]

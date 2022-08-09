@@ -14,5 +14,19 @@
       <p><%= restaurant.description %> </p>
       <p><a href="<%= restaurant.website %> ">View Website</a></p>
     </main>
+<div class="comment-box">
+    <h3>Comments</h3>
+    <% if (comments){ %>
+      <% for(const comment of comments) { %>
+        <div class="comment-item"><img src="https://cdn.onlinewebfonts.com/svg/img_87237.png" width="50px" height="50px" alt="profile-picture"><%=comment%><br></div> 
+      <% } %>
+    <% } else { %>
+      <p>No comments added yet</p> 
+    <% } %> 
+    Comment here:
+    <form method="post">
+      <input type="text" name="comment">
+    </form><br>
+</div>
   </body>
 </html>

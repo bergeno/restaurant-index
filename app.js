@@ -52,11 +52,31 @@ app.get('/restaurant/:id', function(req, res){
 
     for ( const restaurant of restaurants){
         if (restaurant.id === restaurantId){
-            res.render('restaurant-detail', {restaurant: restaurant});
+            const comments = restaurant.comments;
+            res.render('restaurant-detail', {restaurant: restaurant, comments: comments});
         }
     }
 
     res.status(404).render('404');
+});
+
+app.post('/restaurant/:id', function(req, res){
+    const restaurantId = req.params.id;
+    const storedRestaurants = resData.getStoredRestaurants();
+
+    const comment = req.body.comment
+
+    res.redirect(restaurantId)
+
+    for ( const restaurant of storedRestaurants){
+        if (restaurant.id === restaurantId){
+            restaurant.comments.push(comment)
+            resData.storeRestaurant(storedRestaurants);
+        }
+    }
+
+
+
 });
 
 app.get('/about', function(req, res){
@@ -93,5 +113,7 @@ app.use(function(req, res){
 app.use(function(error, req, res, next){
     res.status(500).render('500');
 });
+
+
 
 

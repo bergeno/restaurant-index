@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  color: rgb(29, 29, 29)
+}
+
 #restaurants-list {
   list-style: none;
   margin: 2rem 0;
@@ -9,46 +16,43 @@
   padding: 1rem;
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  background-color: rgb(250, 233, 194);
-  color: rgb(110, 78, 7);
-  text-align: left;
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+  box-shadow: 3px 3px 15px rgb(199, 199, 199);
+  margin-bottom: 50px;
 }
 
 .restaurant-item h2 {
-  font-family: 'Roboto Condensed', 'Roboto', sans-serif;
-  font-size: 1.25rem;
+  /* font-family: 'Roboto Condensed', 'Roboto', sans-serif; */
+  font-size: 2.25rem;
   margin: 0.25rem 0;
 }
 
 .restaurant-item p {
   margin: 0.2rem 0;
-  color: rgb(110, 78, 7);
-}
-
-.restaurant-meta {
-  margin-bottom: 0.5rem;
-}
-
-.restaurant-meta p {
-  color: rgb(170, 148, 95);
 }
 
 .restaurant-actions {
-  margin-top: 1rem;
-  text-align: right;
+  margin-top: 2rem;
+  text-align: center;
+  width: 100%;
 }
 
 .restaurant-actions a {
   padding: 0.5rem 1.5rem;
-  background-color: rgb(202, 158, 62);
+  background-color: rgb(255, 255, 255);
   border-radius: 4px;
-  color: white;
+  color: rgb(48, 47, 47);
   text-decoration: none;
+  width: 200px !important;
+  transition: 0.3s;
 }
 
 .restaurant-actions a:hover,
 .restaurant-actions a:active {
-  background-color: rgb(202, 141, 62);
+  background-color: rgb(59, 59, 59);
+  transition: 0.3s;
+  color: white;
 }
 
 p {
@@ -59,4 +63,21 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.comment-box {
+  margin-left: 100px;
+}
+
+.comment-item {
+  background-color: beige;
+  margin: 5px;
+  box-shadow: 3px 3px 15px rgb(199, 199, 199);
+  border-radius: 4px;
+  padding-left: 10px ;
+}
+
+
+form {
+  
 }

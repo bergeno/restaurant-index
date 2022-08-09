@@ -1,7 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  background-color: rgb(250, 237, 208);
+  background-color: rgb(255, 255, 255);
   font-size: 1.5rem;
 }
 
@@ -13,8 +13,8 @@ main {
 }
 
 main h1 {
-  font-family: 'Roboto Condensed', 'Roboto', sans-serif;
-  color:rgb(202, 158, 62);
+  font-family: 'Roboto Condensed', 'Roboto', sans-serif; 
+  color:rgb(26, 26, 26);
 }
 
 main p {
@@ -23,12 +23,13 @@ main p {
 
 #main-header {
   width: 100%;
-  height: 5rem;
+  height: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 5%;
   box-sizing: border-box;
+  box-shadow: 0px 1px 10px rgb(199, 199, 199);
 }
 
 #logo {
@@ -62,14 +63,16 @@ main p {
 
 #main-header .nav-item a {
   text-decoration: none;
-  color: rgb(139, 100, 8);
-  padding: 0.25rem 0.75rem;
-  border-radius: 4px;
+  color: rgb(20, 20, 20);
+  padding: 0.55rem 0.85rem;
+  border-radius: 25px;
+  transition: 0.2s;
 }
 
 #main-header .nav-item a:hover,
 #main-header .nav-item a:active {
-  background-color: rgb(245, 222, 173);
+  background-color: rgb(231, 231, 231);
+  transition: 0.2s;
 }
 
 #drawer-btn {
@@ -152,3 +155,4 @@ main p {
     padding: 0 15%;
   }
 }
+
